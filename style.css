@@ -1,0 +1,12 @@
+H1 {
+    color: #ff0404;
+    font-size: 200%;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    text-align: center;
+  }
+  P {
+    color: #1a0038;
+    font-size: 150%;
+    padding-left: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+  }
