@@ -18,9 +18,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          permissions: 'write'
+          permissions: 'read'
       - run: npm install
-      - run: sudo npm run test
+      - run: npm run test
 
   deploy:
     runs-on: ubuntu-latest
