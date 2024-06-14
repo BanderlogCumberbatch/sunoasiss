@@ -1,12 +1,11 @@
 name: Test and Deploy
 
-permissions:
-  contents: read
-
 on:
   push:
     branches:
       - main
+
+permissions: write-all
 
 jobs:
   test:
