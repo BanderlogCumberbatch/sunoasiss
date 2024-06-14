@@ -30,8 +30,14 @@ jobs:
         with:
           name: website-files
           path: .
-      - uses: actions/create-pages-site@v1
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          build_dir: . 
-          publish_dir: /
+          publish_dir: ./
+          # Директория, где собраны файлы сайта
+          user_name: 'BanderlogCumberbatch'
+          # Имя пользователя GitHub
+          repo_name: 'BanderlogCumberbatch.github.io'
+          # Имя репозитория GitHub Pages
+          publish_branch: gh-pages 
