@@ -1,5 +1,5 @@
 // test.js (или __tests__/test.js)
-const sum = require('./script.js');
+const sum = require('../script.js');
 
 test('adds 1 + 2 to equal 3', () => {
   expect(sum(1, 2)).toBe(3); 
