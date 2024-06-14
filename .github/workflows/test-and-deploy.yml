@@ -18,6 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          permissions: 'write'
       - run: npm install
       - run: npm run test
 
