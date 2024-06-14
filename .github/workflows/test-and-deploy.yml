@@ -15,7 +15,10 @@ jobs:
       - uses: actions/checkout@v3
       - name: Install dependencies
         run: npm install
-      - name: Run test
+      - name: Grant permissions
+        run: chmod +x ./node_modules/.bin/jest
+      - run: ls -l
+      - name: Run tests
         run: npm test
 
   deploy:
