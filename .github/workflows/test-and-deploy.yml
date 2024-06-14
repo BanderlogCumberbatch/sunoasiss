@@ -9,11 +9,6 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Setup Git config
-        run: |
-          git config --global user.email ${{ secrets.GIT_EMAIL }}
-          git config --global user.name "BanderlogCumberbatch"
       - run: ls -l
       - uses: actions/checkout@v3
       - name: Install dependencies
@@ -39,8 +34,9 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./
           # Директория, где собраны файлы сайта
-          user_name: 'BanderlogCumberbatch'
+          user_name: ${{ secrets.GIT_NAME }}
           # Имя пользователя GitHub
           repo_name: 'BanderlogCumberbatch.github.io'
           # Имя репозитория GitHub Pages
-          publish_branch: gh-pages 
+          publish_branch: gh-pages
+          user_email: ${{ secrets.GIT_EMAIL }}
