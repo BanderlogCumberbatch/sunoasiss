@@ -19,7 +19,7 @@ jobs:
           node-version: '20'
           permissions: 'write'
       - run: npm install
-      - run: npm run test
+      - run: sudo npm run test
 
   deploy:
     runs-on: ubuntu-latest
