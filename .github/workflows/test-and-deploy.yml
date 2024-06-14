@@ -1,7 +1,7 @@
 name: Test and Deploy
 
 permissions:
-  contents: read
+  contents: write
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          permissions: 'read'
+          permissions: 'write'
       - run: npm install
       - run: npm run test
 
