@@ -11,7 +11,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: chmod +x ./node_modules/.bin/jest
+      - run: ls -l
+      - run: chmod +x jest
       - uses: actions/checkout@v3
       - name: Install dependencies
         run: npm install
