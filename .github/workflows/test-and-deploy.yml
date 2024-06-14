@@ -5,7 +5,7 @@ on:
     branches:
       - main
 
-permissions: read-all
+permissions: write-all
 
 jobs:
   test:
@@ -17,7 +17,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
-          permissions: 'read'
+          permissions: 'write'
       - run: npm install
       - run: npm run test
 
