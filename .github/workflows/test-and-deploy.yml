@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: ls -l
-      - run: chmod +x jest
       - uses: actions/checkout@v3
       - name: Install dependencies
         run: npm install
