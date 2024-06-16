@@ -38,7 +38,7 @@ jobs:
           # Имя пользователя GitHub
           repo_name: 'BanderlogCumberbatch.github.io'
           # Имя репозитория GitHub Pages
-          publish_branch: nlc7
+          publish_branch: nlc
           user_email: ${{ secrets.GIT_EMAIL }}
 
 # and the final one )
