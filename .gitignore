@@ -1,9 +1,6 @@
-.gitignore
 node_modules
 __tests__
 .github
 README.md
-goida.jpg
-rika.jpg
 package.json
 package-lock.json
